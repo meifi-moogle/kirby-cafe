@@ -41,7 +41,7 @@ import footerImage from "../images/footer-image.webp";
 	<body>
 		<div class="navbar-header-wrapper stacked">
 			<nav class="navbar">
-				<Image src={siteLogo} class="site-logo" alt="" />
+				<Image src={siteLogo} class="site-logo" alt="logo" loading="eager" />
 
 				<label class="hamburger-menu">
 					<input type="checkbox" />
@@ -66,7 +66,8 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 			</nav>
 			<header>
-				<Image src={homeImage} class="home-image" alt="" />
+				<Image src={homeImage} class="home-image" alt="decorative overlapping background"
+				loading="eager" />
 			</header>
 		</div>
 
@@ -120,15 +121,15 @@ import footerImage from "../images/footer-image.webp";
 
 		<section class="menu-section">
 			<div class="section-banner">
-				<Image src={iconOnigiri} alt="" />
+				<Image src={iconOnigiri} alt="onigiri icon" />
 				<h2>M E N U</h2>
 			</div>
 
-			<Image src={takeOutMenu} class="take-out" id="menu" alt="" />
+			<Image src={takeOutMenu} class="take-out" id="menu" alt="we have takeout menu" />
 
 			<div class="menu-cards">
 				<div class="menu-card">
-					<Image src={mealBirthday} alt="" />
+					<Image src={mealBirthday} alt="Kirby birthday meal" />
 					<div class="card-text">
 						<p class="meal">ハッピーバースデー☆カービィ</p>
 						<p class="price text-gray">1,680yen</p>
@@ -142,7 +143,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealOmuraisu} alt="" />
+					<Image src={mealOmuraisu} alt="omuraisu" />
 					<div class="card-text">
 						<p class="meal">ワドルディのおひるねオムライス</p>
 						<p class="price text-gray">1,980yen</p>
@@ -153,7 +154,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealCurry} alt="" />
+					<Image src={mealCurry} alt="low allergen ohoshisama curry" />
 					<div class="card-text">
 						<p class="meal">低アレルゲンおほしさまカレー</p>
 						<p class="price text-gray">1,200yen</p>
@@ -164,7 +165,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealBeef} alt="" />
+					<Image src={mealBeef} alt="roast beef in a round, little Kirby lunch box" />
 					<div class="card-text">
 						<p class="meal">カービィのもぐもぐローストビーフ丼</p>
 						<p class="price text-gray">2,300yen</p>
@@ -178,7 +179,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealSalmon} alt="" />
+					<Image src={mealSalmon} alt="salmon avocado in a round, little Waddle Dee lunch box" />
 					<div class="card-text">
 						<p class="meal">
 							ワドルディのみんなでロミロミ！サーモンアボカド丼
@@ -195,7 +196,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealPizza} alt="" />
+					<Image src={mealPizza} alt="pizza in a Kirby cardboard box" />
 					<div class="card-text">
 						<p class="meal">
 							カービィカフェの本格窯焼きピッツァ
@@ -209,7 +210,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealPancake} alt="" />
+					<Image src={mealPancake} alt="Kirby pancake" />
 					<div class="card-text">
 						<p class="meal">カービィのふわふわパンケーキ</p>
 						<p class="price text-gray">1,680yen</p>
@@ -221,7 +222,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealWaddleDee} alt="" />
+					<Image src={mealWaddleDee} alt="Waddle Dee, head in the clouds on a star shaped plate" />
 					<div class="card-text">
 						<p class="meal">ワドルディのさがしもの</p>
 						<p class="price text-gray">1,680yen</p>
@@ -239,7 +240,7 @@ import footerImage from "../images/footer-image.webp";
 				</div>
 
 				<div class="menu-card">
-					<Image src={mealMarshmallow} alt="" />
+					<Image src={mealMarshmallow} alt="Kirby and Waddle Dee floating on top of mugs" />
 					<div class="card-text">
 						<p class="meal">カービィのうきうきマシュマロ・オ・レ</p>
 						<p class="price text-gray">1,480yen</p>
@@ -283,13 +284,13 @@ import footerImage from "../images/footer-image.webp";
 					<p class="bolder">AND MORE...</p>
 					<div class="external-links">
 						<a href="#">
-						<Image src={kirbyCafe} alt="" />
+						<Image src={kirbyCafe} alt="banner for 'Kirby café'" />
 						</a>
 						<a href="#">
-						<Image src={kirbyPortal} alt="" />
+						<Image src={kirbyPortal} alt="banner for 'Kirby portal'" />
 						</a>
 						<a href="#">
-						<Image src={kirbySoundCafe} alt="" />
+						<Image src={kirbySoundCafe} alt="banner for 'Sound of Kirby café'" />
 						</a>
 					</div>
 				</div>
@@ -298,13 +299,13 @@ import footerImage from "../images/footer-image.webp";
 			<div class="back-to-top">
 				<a href="#openings" class="kirby-scroll">
 					<p class="bold">Back to top</p>
-					<Image src={kirbyScroll} alt="" />
+					<Image src={kirbyScroll} alt="clickable Kirby to get back to the top of the page" />
 				</a>
 			</div>
 		</section>
 
 		<footer>
-			<Image src={footerImage} alt="" />
+			<Image src={footerImage} alt="many characters spending time at a café" />
 			<div class="copyrights">
 				<p>
 					© Nintendo / HAL Laboratory, Inc.
