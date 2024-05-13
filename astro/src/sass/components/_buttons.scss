@@ -1,0 +1,15 @@
+button {
+    color: white;
+    background-color: var(--color-brown);
+    border-style: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+// For Buttons with Background Image 
+.btn-background-img {
+    background-image: url("");
+    background-position: center;
+    background-size: 90%;
+}

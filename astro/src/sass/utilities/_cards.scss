@@ -1,0 +1,80 @@
+// OPENING CAFE CARDS 
+.card {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+
+    min-width: 40%;
+    border-radius: .7rem;
+}
+
+.card h2 {
+    max-width: fit-content;
+    background-color: var(--color-yellow);
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+}
+
+.card .kirby-cafe { font-size: var(--fs-h2);}
+.card .disclaimer { font-size: var(--fs-xs); padding-top: .5rem;}
+.card button { font-size: var(--fs-l); }
+
+
+
+// MENU CARDS 
+
+.menu-card {
+    max-width: 25vw;
+    margin-block: 1rem;
+}
+
+.menu-card img {
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+    object-fit: cover;
+}
+
+.card-text {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+    aspect-ratio: 1 / 0.9;
+}
+
+.card-text .meal { font-size: var(--fs-l); }
+
+@media (width > 1600px) {
+    .menu-card { max-width: 28vw; }
+
+    .card-text { aspect-ratio: 1 / 0.5; }
+}
+
+@media (width < 990px) {
+    .menu-card { max-width: 38vw; }
+
+    .card-text { aspect-ratio: 1 / 0.8; }
+}
+
+
+@media (width < 990px) {
+    .menu-card { max-width: 38vw; }
+
+    .card-text { aspect-ratio: 1 / 0.8; }
+}
+
+@media (width < 760px) {
+    .menu-card { max-width: 80vw; }
+
+    .card-text { aspect-ratio: 1 / 0.4; }
+}
+
+
+

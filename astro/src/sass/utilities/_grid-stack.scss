@@ -1,0 +1,14 @@
+/* Using Grid to Stack content with images and video */
+
+.stacked {
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.stacked > .home-image {
+    z-index: -9999;
+}

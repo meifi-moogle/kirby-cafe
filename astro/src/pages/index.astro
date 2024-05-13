@@ -1,0 +1,298 @@
+---
+import "../sass/main.scss";
+
+import { Image } from "astro:assets";
+import siteLogo from "../images/site-logo.svg";
+import homeImage from "../images/home-image.webp";
+
+import iconOnigiri from "../images/icon-onigiri.webp";
+import takeOutMenu from "../images/takeout-ok.webp";
+
+import mealBirthday from "../images/meal_kirby-birthday.webp";
+import mealOmuraisu from "../images/omuraisu.webp";
+import mealCurry from "../images/ohoshisama-curry.webp";
+import mealBeef from "../images/roast-beef.webp";
+import mealSalmon from "../images/salmon-avocado.webp";
+import mealPizza from "../images/pizza.webp";
+import mealPancake from "../images/pancake.webp";
+import mealWaddleDee from "../images/waddle-dee.webp";
+import mealMarshmallow from "../images/marshmallow-au-lait.webp";
+
+
+import kirbyCafe from "../images/kirby-cafe-store.webp";
+import kirbyPortal from "../images/kirby-portal.webp";
+import kirbySoundCafe from "../images/kirby-cafe-sound.webp";
+import kirbyScroll from "../images/kirby-scroll.svg";
+
+import footerImage from "../images/footer-image.webp";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Kirby Café</title>
+	</head>
+	<body>
+		<div class="navbar-header-wrapper stacked">
+			<nav class="navbar">
+				<Image src={siteLogo} class="site-logo" alt="" />
+
+				<div class="navbar-links">
+					<ul>
+						<li><a href="#openings">OPENINGS</a></li>
+						<li><a href="#menu">MENU</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+			<header>
+				<Image src={homeImage} class="home-image" alt="" />
+			</header>
+		</div>
+
+		<div class="openings-section">
+
+		<div id="openings" class="openings">
+			<h1>WE ARE OPEN!</h1>
+		</div>
+
+		<div class="cafe-store-cards">
+			<div class="card">
+				<h2 class="boldest">CAFE</h2>
+				<p class="info bold">予約制／お食事／一部グッズ</p>
+				<p class="kirby-cafe">カービィカフェ</p>
+				<p class="location">東京スカイツリータウン・ソラマチ 4F</p>
+				<div class="schedule text-red">
+					<p class="bold">
+						★営業時間★<br />
+						 10:00～22:00(ラストオーダー 21:00)
+					</p>
+					<p class="disclaimer">
+						※状況によって営業時間を変更する場合がございます。
+					</p>
+				</div>
+				<button>カフェを予約する</button>
+			</div>
+
+			<div class="card">
+				<h2 class="boldest">CAFE</h2>
+				<p class="info bold">予約制／お食事／一部グッズ</p>
+				<p class="kirby-cafe">カービィカフェ</p>
+				<p class="location">東京スカイツリータウン・ソラマチ 4F</p>
+				<div class="schedule text-red">
+					<p class="bold">
+						★営業時間★<br />
+						 10:00～22:00(ラストオーダー 21:00)
+					</p>
+					<p class="disclaimer">
+						※状況によって営業時間を変更する場合がございます。
+					</p>
+				</div>
+				<button>カフェを予約する</button>
+			</div>
+		</div>
+
+
+		</div>
+
+
+		<section class="menu-section">
+			<div class="section-banner">
+				<Image src={iconOnigiri} alt="" />
+				<h2>M E N U</h2>
+			</div>
+
+			<Image src={takeOutMenu} class="take-out" id="menu" alt="" />
+
+			<div class="menu-cards">
+				<div class="menu-card">
+					<Image src={mealBirthday} alt="" />
+					<div class="card-text">
+						<p class="meal">ハッピーバースデー☆カービィ</p>
+						<p class="price text-gray">1,680yen</p>
+						<p class="meal-description">
+							カービィのバースデーを記念したフルーツたっぷりのケーキ<br
+							/>
+							 ぜひ、カービィへのお祝いの気持ちをのせてご注文ください！
+						</p>
+						<p class="note">★2024年4月1日(月)提供開始</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealOmuraisu} alt="" />
+					<div class="card-text">
+						<p class="meal">ワドルディのおひるねオムライス</p>
+						<p class="price text-gray">1,980yen</p>
+						<p class="meal-description">
+							すやすやと眠るワドルディの寝相が、ちょっとだけ変わりました。起こさないように、そ〜っとお召し上がりください。
+						</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealCurry} alt="" />
+					<div class="card-text">
+						<p class="meal">低アレルゲンおほしさまカレー</p>
+						<p class="price text-gray">1,200yen</p>
+						<p class="meal-description">
+							おほしさまが散りばめられた、コックカワサキ特製の甘口カレーです。特定原材料の8品目（卵・乳・小麦・そば・落花生・エビ・カニ・くるみ）を原材料に使用していないので、アレルギーのある方も楽しくお召し上がりいただけます。コックカワサキごじまんのカレーをどうぞお楽しみあれ！
+						</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealBeef} alt="" />
+					<div class="card-text">
+						<p class="meal">カービィのもぐもぐローストビーフ丼</p>
+						<p class="price text-gray">2,300yen</p>
+						<p class="meal-description">
+							食いしんぼうなカービィも、もぐもぐが止まらない！ボリュームたっぷりのローストビーフに、ぷるぷるの温玉をからめながらお召し上がりください。
+						</p>
+						<p class="note">
+							※スーベニアランチボックス付き(カービィ)
+						</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealSalmon} alt="" />
+					<div class="card-text">
+						<p class="meal">
+							ワドルディのみんなでロミロミ！サーモンアボカド丼
+						</p>
+						<p class="price text-gray">2,300yen</p>
+						<p class="meal-description">
+							“ロミロミ”とは“揉みこむ”の意味。
+							ワドルディたちがみんなでせっせと“ロミロミ”した漬けサーモンを、ごろごろ入ったアボカドと一緒にどうぞ。
+						</p>
+						<p class="note">
+							※スーベニアランチボックス付き(ワドルディ)
+						</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealPizza} alt="" />
+					<div class="card-text">
+						<p class="meal">
+							カービィカフェの本格窯焼きピッツァ
+							デデデリゾートのぜいたくシーフード
+						</p>
+						<p class="price text-gray">1,680yen</p>
+						<p class="meal-description">
+							シーフードとソーセージのうまみたっぷりのピッツァ。デデデリゾート産のぷりぷりのシーフードをお楽しみください。
+						</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealPancake} alt="" />
+					<div class="card-text">
+						<p class="meal">カービィのふわふわパンケーキ</p>
+						<p class="price text-gray">1,680yen</p>
+						<p class="meal-description">
+							たっぷりの厚みのふわふわパンケーキに、カービィのいちごアイスをのせました。温かいパンケーキとのコントラストをお楽しみください！
+						</p>
+						<p class="note">☆TOKYO限定メニュー</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealWaddleDee} alt="" />
+					<div class="card-text">
+						<p class="meal">ワドルディのさがしもの</p>
+						<p class="price text-gray">1,680yen</p>
+						<p class="meal-description">
+							雲の中にすっぽり顔をうずめて、ワドルディが何かさがしています。
+
+
+							<br />
+							 さがしものは見つかったかな？
+							<br />
+							 オレンジシャーベットとクリームのハーモニーをお楽しみください。
+						</p>
+						<p class="note">※スーベニア星形ガラスプレート付き</p>
+					</div>
+				</div>
+
+				<div class="menu-card">
+					<Image src={mealMarshmallow} alt="" />
+					<div class="card-text">
+						<p class="meal">カービィのうきうきマシュマロ・オ・レ</p>
+						<p class="price text-gray">1,480yen</p>
+						<p class="meal-description">
+							カフェオ・レに、カービィマシュマロを添えて。マシュマロは2種類からお選びいただけます。
+
+
+							<br />
+							 ・カービィとワープスター
+							<br />
+							 ・すやすやワドルディ
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="footer">
+			<div class="contact-us-wrapper">
+				<div class="bolder">CONTACT US</div>
+				<p class="bold">ベネリック株式会社</p>
+				<button>お問い合わせ</button>
+			</div>
+
+			<div class="links-wrapper">
+				<div class="twitter-container">
+					<p class="bolder">FOLLOW US</p>
+
+					<a class="twitter-wrapper" href="#">
+						<div class="twitter-logo">
+							<div class="twitter-bg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="white" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/></svg>
+						</div>
+						</div>
+						<span>カービィカフェ公式Xアカウント</span>
+					</a>
+				</a>
+				</div>
+
+				<div class="extra-links-container">
+					<p class="bolder">AND MORE...</p>
+					<div class="external-links">
+						<a href="#">
+						<Image src={kirbyCafe} alt="" />
+						</a>
+						<a href="#">
+						<Image src={kirbyPortal} alt="" />
+						</a>
+						<a href="#">
+						<Image src={kirbySoundCafe} alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="back-to-top">
+				<a href="#openings" class="kirby-scroll">
+					<p class="bold">Back to top</p>
+					<Image src={kirbyScroll} alt="" />
+				</a>
+			</div>
+		</section>
+
+		<footer>
+			<Image src={footerImage} alt="" />
+			<div class="copyrights">
+				<p>
+					© Nintendo / HAL Laboratory, Inc.
+					<br />
+					 ©BENELIC CO.,LTD.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

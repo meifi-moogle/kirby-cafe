@@ -1,0 +1,22 @@
+// For Responsive Image or Video while Maintaining Height
+
+.section-video-full-height {
+    position: relative;
+    overflow: hidden;
+    height: 100dvh;
+    width: 100%;
+}
+
+.video-full-height {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width: 720px) {
+    .section-video { height: 70vh; }
+}

@@ -1,0 +1,31 @@
+:root {
+    --fs-xs: .850rem;
+    --fs-s: .9rem;
+    --fs-m: 1rem;
+    --fs-l: 1.2rem;
+    --fs-xl: 1.3rem;
+    --fs-xxl: 1.4rem;
+    --fs-h2: 2rem;
+}
+
+@media (width < 800px) {
+    :root {
+        --fs-xs: .7rem;
+        --fs-s: .8rem;
+        --fs-m: .9rem;
+        --fs-l: 1.1rem;
+        --fs-xl: 1.3rem;
+    }
+}
+
+
+.bold, .meal { font-weight: 600; }
+
+.bolder { font-weight: 700; }
+
+.boldest { font-weight: 800; }
+
+
+.text-gray { color: var(--color-gray); }
+
+.text-red { color: var(--color-red); }
