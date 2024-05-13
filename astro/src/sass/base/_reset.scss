@@ -54,5 +54,11 @@ p {
 }
 .kirby-scroll { color: var(--color-brown) }
 
+aside li, aside a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-brown);
+ }
+
 
 
