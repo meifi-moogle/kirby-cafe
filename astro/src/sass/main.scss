@@ -43,7 +43,7 @@ header img {
 }
 
 @media (width < 800px) {
-    .cafe-store-cards { flex-direction: column; }
+    .cafe-store-cards { flex-direction: column; gap: 5vh; }
 }
 
 // MENU SECTION 
@@ -80,17 +80,14 @@ header img {
     padding-inline: 1rem;
 }
 
-@media (width < 990px) {
-    .menu-cards {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media (width < 760px) {
     .menu-cards { 
         flex-direction: column;
         align-items: center;
      }
+
+     .section-banner { padding-block: 1vh; }
+     .take-out { margin-top: 2rem; }
 }
 
 
@@ -164,6 +161,23 @@ header img {
  .kirby-scroll img {
     max-width: 14vw;
     margin-top: .5rem;
+ }
+
+
+ @media (width < 800px) {
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .links-wrapper { gap: 2rem; }
+
+    .external-links img { max-width: 70vw; }
+
+    .kirby-scroll img { max-width: 35vw; }
  }
 
 
