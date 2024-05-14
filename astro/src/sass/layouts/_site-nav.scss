@@ -145,3 +145,11 @@
     .navbar {justify-content: flex-start;}
     nav .navbar-links { display: none; }
 }
+
+//NAV Links positioning for very un-zoomed screens
+@media (width > 2280px) {
+    .navbar {
+        justify-content: center;
+        gap: 10vw;
+    }
+}
